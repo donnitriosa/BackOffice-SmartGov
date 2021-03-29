@@ -1,10 +1,12 @@
 <template>
   <div class="c-app flex-row align-items-center">
     <CContainer>
-      <CRow class="justify-content-center">
-        <CCol md="4">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
           <CCardGroup>
-            <CCard class="p-2">
+            <CCard>
               <CCardBody>
                 <CForm>
                   <div class="text-center">
@@ -27,7 +29,7 @@
                       <CButton color="link" class="px-0">Forgot password?</CButton>
                     </CCol>
                   </CRow>
-                  <br><br><br>
+                  <br><br><br><br>
                   <CRow>
                     <CCol>
                       <button type="button" class="btn btn-primary btn-lg btn-block px-4">Masuk</button>
@@ -37,8 +39,8 @@
               </CCardBody>
             </CCard>
           </CCardGroup>
-        </CCol>
-      </CRow>
+        </div>
+      </div>
     </CContainer>
   </div>
 </template>
