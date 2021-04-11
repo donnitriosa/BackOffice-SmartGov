@@ -4,10 +4,10 @@
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/coreui/coreui-free-vue-admin-template.git CoreUI-Vue
+$ git clone https://github.com/yup1e/dta-smart-government-backoffice.git
 
 # go into app's directory
-$ cd CoreUI-Vue
+$ cd dta-smart-government-backoffice
 
 # install app's dependencies
 $ npm install

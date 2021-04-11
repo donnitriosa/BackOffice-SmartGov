@@ -1,22 +1,10 @@
 <template>
-  <CCard>
-    <CCardHeader>
-      <slot name="header">
-        <CIcon name="cil-grid"/> {{caption}}
-      </slot>
-    </CCardHeader>
-    <CCardBody>
       <CDataTable
         :hover="hover"
-        :striped="striped"
-        :border="border"
-        :small="small"
         :fixed="fixed"
         :items="items"
         :fields="fields"
-        :items-per-page="small ? 10 : 5"
-        :dark="dark"
-        pagination
+        :header="header"
       >
         <template #status="{item}">
           <td>
@@ -24,8 +12,6 @@
           </td>
         </template>
       </CDataTable>
-    </CCardBody>
-  </CCard>
 </template>
 
 <script>
@@ -36,7 +22,7 @@ export default {
     fields: {
       type: Array,
       default () {
-        return ['username', 'registered', 'role', 'status']
+        return ['nama', 'alamat', 'agama', 'kewarganegaraan']
       }
     },
     caption: {
@@ -44,11 +30,9 @@ export default {
       default: 'Table'
     },
     hover: Boolean,
-    striped: Boolean,
+    header: Boolean,
     border: Boolean,
-    small: Boolean,
     fixed: Boolean,
-    dark: Boolean
   },
   methods: {
     getBadge (status) {

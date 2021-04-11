@@ -22,6 +22,17 @@ const mutations = {
 }
 
 export default new Vuex.Store({
-  state,
-  mutations
+  state: {
+    username: localStorage.getItem('username'),
+    email: localStorage.getItem('email'),
+    isLogged: !!localStorage.getItem('token'),
+  },
+  getters: {
+    getEmail: state => {
+      return state.email
+    },
+    getUsername: state => {
+      return state.username
+    }
+  }
 })

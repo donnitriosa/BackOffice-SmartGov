@@ -49,8 +49,10 @@ const Modals = () => import('@/views/notifications/Modals')
 
 // Views - Pages
 const KTP = () => import('@/views/pages/new-ktp')
+const Detail = () => import('@/views/pages/detail')
 
 const Page404 = () => import('@/views/singlepages/Page404')
+const Logout =() => import('@/views/singlepages/logout')
 const Page500 = () => import('@/views/singlepages/Page500')
 const Login = () => import('@/views/singlepages/Login')
 const Register = () => import('@/views/singlepages/Register')
@@ -87,22 +89,27 @@ function configRoutes () {
           component: KTP
         },
         {
-          path: 'charts',
-          name: 'Charts',
-          component: Charts
+          path: 'detail',
+          name: 'Detail',
+          component: Detail
         },
         {
-          path: 'widgets',
-          name: 'Widgets',
-          component: Widgets
-        },
+          path: 'table',
+          name: 'Table',
+          component: Tables
+        }
+
       ]
     },
     {
       path: '/login',
-      // redirect: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/logout',
+      name: 'Logout',
+      component: Logout
     },
     {
       path: '/404',

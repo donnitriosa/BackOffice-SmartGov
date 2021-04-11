@@ -1,6 +1,6 @@
 <template>
   <CHeader fixed with-subheader light>
-    <CToggler
+    <!-- <CToggler
       in-header
       class="ml-3 d-lg-none"
       @click="$store.commit('toggleSidebarMobile')"
@@ -9,9 +9,10 @@
       in-header
       class="ml-3 d-md-down-none"
       @click="$store.commit('toggleSidebarDesktop')"
-    />
+    /> -->
     <CHeaderBrand class="mx-auto d-lg-none" to="/">
-      <CIcon name="logo" height="48" alt="Logo"/>
+      <img src="/logo/dashboard/side.png" height="48" alt="satuID">
+      <!-- <CIcon name="logo" height="48" alt="Logo"/> -->
     </CHeaderBrand>
     <CHeaderNav class="d-md-down-none mr-auto">
       <CHeaderNavItem class="px-9">
@@ -21,7 +22,7 @@
     <CHeaderNav class="mr-4">
       <CHeaderNavItem class="d-md-down-none mx-2">
         <CHeaderNavLink>
-          <i class="cil-search"></i>
+          <CIcon name="cil-search"/>
         </CHeaderNavLink>
       </CHeaderNavItem>
       <CHeaderNavItem class="d-md-down-none mx-2">
@@ -44,6 +45,6 @@ export default {
   name: 'TheHeader',
   components: {
     TheHeaderDropdownAccnt
-  }
+  },
 }
 </script>

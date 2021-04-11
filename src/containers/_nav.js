@@ -12,30 +12,30 @@ export default [
         _name: 'CSidebarNavItem',
         name: 'Permintaan KTP Baru',
         to: '/ktp-baru',
-        icon: 'cil-address-book'
+        icon: 'cil-tag'
       },
       {
         _name: 'CSidebarNavItem',
         name: 'Migrasi KTP',
-        to: '/#',
+        // to: '/#',
         icon: 'cil-lightbulb'
       },
       {
         _name: 'CSidebarNavItem',
         name: 'Update Data KTP',
-        to: '/#',
+        // to: '/#',
         icon: 'cil-pencil'
       },
       {
         _name: 'CSidebarNavItem',
         name: 'Pelaporan KTP Hilang',
-        to: '/#',
+        // to: '/#',
         icon: 'cil-recycle'
       },
       {
         _name: 'CSidebarNavItem',
         name: 'Articles',
-        to: '/#',
+        // to: '/#',
         icon: 'cil-book'
       },
       {
@@ -45,13 +45,13 @@ export default [
       {
         _name: 'CSidebarNavItem',
         name: 'Settings',
-        to: '/#',
+        // to: '/#',
         icon: 'cil-settings'
       },
       {
         _name: 'CSidebarNavItem',
         name: 'Logout',
-        to: '/#',
+        to: '/Logout',
         icon: 'cil-account-logout'
       }
     ]

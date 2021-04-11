@@ -1,1 +1,58 @@
 // Here you can add other styles
+
+#intro {
+  background-image: url(/img/bg.png);
+  height: 107vh;
+  background-position: 25%;
+  background-size: 77%;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #intro {
+    margin-top: -50.59px;
+  }
+}
+
+.marginsatu {
+  margin-left: 4%;
+  margin-right: 2%;
+}
+
+.margindua {
+  margin-left: 2%;
+  margin-right: 4%;
+}
+
+.w-63 {
+  width: 63% !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.marginkiri {
+  margin-left: 1rem;
+}
+
+.margintengah {
+  margin-left: 1.8%;
+} 
+
+.marginkanan {
+  margin-right: 3%;
+}
+.w-kotak {
+  width: 18%;
+}
+
+.garis {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.paragraf {
+  margin-bottom: 0;
+}

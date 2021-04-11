@@ -1,45 +1,27 @@
 <template>
   <div>
     <CRow>
-      <CCol lg="6">
-        <CTableWrapper :items="getShuffledUsersData()">
-          <template #header>
-            <CIcon name="cil-grid"/> Simple Table
-            <div class="card-header-actions">
-              <a 
-                href="https://coreui.io/vue/docs/components/nav" 
-                class="card-header-action" 
-                rel="noreferrer noopener" 
-                target="_blank"
-              >
-                <small class="text-muted">docs</small>
-              </a>
-            </div>
-          </template>
-        </CTableWrapper>
-      </CCol>
-
-      <CCol lg="6">
-        <CTableWrapper
-          :items="getShuffledUsersData()"
-          striped
-          caption="Striped Table"
-        />
+      <CCol>
+        <CTableWrapper 
+        :items="getData()"
+        hover
+      />
       </CCol>
     </CRow>
 
     <CRow>
       <CCol lg="6">
         <CTableWrapper
-          :items="getShuffledUsersData()"
+          :items="getData()"
           small
           caption="Condensed Table"
+          :header="false"
         />
       </CCol>
 
       <CCol lg="6">
         <CTableWrapper
-          :items="getShuffledUsersData()"
+          :items="getData()"
           fixed
           border
           caption="Bordered Table"
@@ -50,7 +32,7 @@
     <CRow>
       <CCol sm="12">
         <CTableWrapper
-          :items="getShuffledUsersData()"
+          :items="getData()"
           hover
           striped
           border
@@ -64,7 +46,7 @@
     <CRow>
       <CCol sm="12">
         <CTableWrapper
-          :items="getShuffledUsersData()"
+          :items="getData()"
           hover
           striped
           border
@@ -86,19 +68,11 @@ export default {
   name: 'Tables',
   components: { CTableWrapper },
   methods: {
-    shuffleArray (array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1))
-        let temp = array[i]
-        array[i] = array[j]
-        array[j] = temp
-      }
-      return array
-    },
-
-    getShuffledUsersData () {
-      return this.shuffleArray(usersData.slice(0))
+    getData (){
+      return usersData.slice(0)
+      console.log (usersData)
     }
+    
   }
 }
 </script>

@@ -15,3 +15,61 @@
   height: 1.2rem;
   font-size: 1.2rem;
 }
+
+.c-sidebar {
+  color: #fff;
+  background: #073b69;
+}
+
+.c-sidebar .c-sidebar-brand {
+  color: #fff;
+  background: #073b69;
+}
+
+.card-pertama {
+  color:  #e85151;
+  background-color: #ffebeb;
+  border-color: #e85151;
+}
+
+.card-kedua {
+  color:  #2e9cdb;
+  background-color: #f4fcff;
+  border-color: #2e9cdb;
+}
+
+.card-ketiga {
+  color:  #219653;
+  background-color: #effff6;
+  border-color: #219653;
+}
+
+.card-keempat {
+  color:  #de812f;
+  background-color: #ffefe0;
+  border-color: #de812f;
+}
+
+.card-kelima {
+  color:  #9b52e0;
+  background-color: #f4e8ff;
+  border-color: #9b52e0;
+}
+
+.card-header {
+  padding: 0 1.25rem;
+  padding-top: 1%;
+  // padding-bottom: 1%;
+  margin-bottom: 0;
+  background-color:#073b69;
+  border-bottom: 0;
+}
+
+.table{
+  margin-bottom: 0;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.75rem !important;
+  border-top-right-radius: 0.5rem !important;
+}
